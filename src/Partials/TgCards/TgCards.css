@@ -1,0 +1,30 @@
+.t-cards{
+    padding: 5px;
+    position: relative;
+    max-height: 400px;
+    border-radius: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: all 1s;
+    margin-bottom: 10px;
+}
+.t-cards:hover{
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+.t-cards>img{
+    width: 300px;
+    border-radius: 20px;
+}
+.t-title{
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 15px;
+    background-color: var(--tags);
+    right: 30px;
+    color: black;
+    font-size: 2rem;
+    border-radius: 20px;
+    color: var(--white);
+}

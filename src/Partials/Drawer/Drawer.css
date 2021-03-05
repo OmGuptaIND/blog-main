@@ -1,0 +1,19 @@
+.dr{
+    position: absolute;
+    padding: 20px 25px;
+    background-color: var(--tags);
+    color: var(--white);
+    font-size: 1.6rem;
+    border-radius: 20px;
+    top: 100px;
+    left: 360px;
+}
+.dr>p{
+    margin-bottom: 8px;
+    padding-bottom: 3px;
+    max-width: 110px;
+}
+.dr>p:hover{
+    border-bottom: 1px solid var(--white);
+    cursor: pointer;
+}

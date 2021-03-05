@@ -1,0 +1,112 @@
+.footer {
+    padding:20px 40px;
+    font-size: 3rem;
+    font-family: var(--primary_font);
+    font-weight: bold;
+    margin-left: 30px;
+}
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot_get{
+    display: flex;
+    padding:10px 20px;
+    background-color: #334051;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+}
+.foot_get>input{
+    outline: none;
+    background-color: inherit;
+    border: none;
+    font-size: 1.5rem;
+    width: 200px;
+    margin-left: 10px;
+    color: var(--white);
+    font-family: var(--secondary_font);
+    font-weight: bold;
+    transition: all 1s;
+}
+.foot_get>input:hover{
+    width:250px;
+}
+.foot_get>p{
+    background-color: var(--btn_primary);
+    padding:20px 25px;
+    border-radius: 50px;
+    transition: all 1s;
+}
+.foot_get>p:hover{
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.section{
+    border-top: 1px solid #334051;
+    margin-top: 40px;
+    width: 90%;
+    margin-left: 20px;
+}
+.foot{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0px;
+    align-items: center;
+}
+.cmp{
+    margin-left: 20px;
+}
+.cmp_name{
+    font-family: var(--primary_font);
+    font-weight: 200;
+}
+.tagline{
+    font-family: var(--secondary_font);
+    font-weight: 100;
+    font-size: 1.6rem;
+    width: 80%;
+    margin-top: 10px;
+}
+.social{
+    display: flex;
+}
+.social>p{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.sc{
+    font-size: 1.8rem !important;
+    transition: 2s all;
+}
+.sc:hover{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.foot_table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.foot_list{
+    font-size: 1.2rem ;
+}
+.foot_tag{
+    font-family: var(--tertiary_font);
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+.foot_options{
+    margin-bottom: 10px;
+    font-weight: 100;
+    padding-bottom: 1px;
+    cursor: pointer;
+    max-width: 90px;
+    padding:5px 0px
+}
+.foot_options:hover{
+    border-bottom: 1px solid var(--white);
+    margin-bottom: 9px ;
+}

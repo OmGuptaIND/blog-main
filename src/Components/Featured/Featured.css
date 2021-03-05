@@ -1,0 +1,18 @@
+.ftr{
+    display: flex;
+    padding:10px 50px
+}
+.ftr-title{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.1rem;
+    font-family: var(--tertiary_font);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.ftr-items{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}

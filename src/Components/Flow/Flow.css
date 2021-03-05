@@ -1,0 +1,37 @@
+.flow-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flow{
+    display: flex;
+    padding: 10px 50px;
+    margin-top: 70px;
+}
+.fl-title{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.1rem;
+    font-family: var(--tertiary_font);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.fl-cards{
+    display: inline-block;
+    text-align: center;
+}
+.fl-cards>p{
+    display: inline-block;
+}
+.more-btn{
+    padding:20px 24px;
+    font-size: 1.5rem;
+    background-color: var(--btn_primary);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s all;
+}
+.more-btn:hover{
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}

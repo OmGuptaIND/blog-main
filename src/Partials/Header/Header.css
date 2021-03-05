@@ -1,0 +1,47 @@
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    font-family: var(--primary_font);
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding:20px 0px 20px 15px
+}
+.logo{
+    margin: 0px 180px;
+    font-size: 4rem;
+}
+.options{
+    display: flex;
+    margin-left: 100px;
+}
+.mr{
+    font-size: 2rem;
+    transform: translateY(-20%);
+}
+.option{
+    display: flex;
+    margin-right: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.extra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 120px;
+}
+.find{
+    font-size: 2.1rem !important;
+    transform: translateY(15%);
+    margin-right: 25px;
+}
+.login{
+    width: 120px;
+    padding: 10px 15px;
+    background-color: var(--btn_primary);
+    border-radius: 25px;
+    padding-left: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
