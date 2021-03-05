@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Footer.css';
 
 //Components;
@@ -10,13 +10,29 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import Data from './Data';
 
 export default function Footer() {
+
+    const [email, setEmail] = useState("");
+    const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const handleClick = (e) => {
+        if(email === ""){
+            alert("Enter Email Please!")
+        }
+        else if(email.match(mailformat)){
+            setEmail("");
+            alert("Success!");
+        }else{
+            alert("Enter Valid Email Please !")
+        }
+
+    }
+
     return (
         <div className="footer">
             <div className="footer_top">
                 <p>Subscribe for new Posts</p>
                 <div className="foot_get">
-                    <input className="email" type='email' placeholder="Enter Email" />
-                    <p>Subscribe</p>
+                    <input className="email" type='email' placeholder="Enter Email" value = {email} onChange = {e => setEmail(e.target.value)} />
+                    <p onClick = {handleClick} >Subscribe</p>
                 </div>
             </div>
             <div className="section"></div>
