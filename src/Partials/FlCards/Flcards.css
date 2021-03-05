@@ -4,7 +4,6 @@
     margin: 20px 10px 20px 10px;
     background-color: var(--color1);
     color: black;
-    max-height: 850px;
     display: inline-block;
     transition: all 1s;
     cursor: pointer;
@@ -13,6 +12,7 @@
 .flc>img{
     width: 100%;
     object-fit: cover;
+    height: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -52,4 +52,12 @@
     width: 50px;
     border-radius: 50px;
     margin-right: 10px;
+}
+.fc-author>p{
+    margin-bottom: 1px;
+    transition: all 1s;
+}
+.fc-author>p:hover{
+    margin-bottom: 0px;
+    border-bottom: 1px solid var(--tags);
 }

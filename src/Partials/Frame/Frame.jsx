@@ -1,21 +1,24 @@
 import React from 'react';
 import './Frame.css';
 
+//Components;
 
-export default function Frame() {
+
+export default function Frame({tags, title, desc, author, imgURL, time}) {
     return (
         <div className="frame" >
-            <img src="images/insta.jpeg" alt=""/>
+            <img src= {imgURL} alt=""/>
             <div className="frame-data">
-                <div className="tags"><p>Creativity</p><p>Creativity</p></div>
-                <p className="frame-title">I work Best when my space is filled with Inspiration</p>
-                <p className="frame-details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem minima, nisi tempora ab sapiente quidem nemo qui impedit. Recusandae reiciendis amet quibusdam maxime provident saepe. Alias vel excepturi at aperiam.</p>
+                <div className="tags">
+                    {tags?.map((item, index)=><p key={index} > {item} </p>)}
+                </div>
+                <p className="frame-title"> {title} </p>
+                <p className="frame-details"> {desc} </p>
                 <div className="auth-details">
-                    <img src="images/avatar.jpeg" alt="err"/>
-                    
+                    <img src= {author.imgURL}  alt="err"/>
                     <div className="frame-time">
-                        <p className="name">Om Gupta</p>
-                        <p className="min-read"  >3 Min Read</p>
+                        <p className="name">{author.name}</p>
+                        <p className="min-read">{time}</p>
                     </div>
                 </div>
             </div>

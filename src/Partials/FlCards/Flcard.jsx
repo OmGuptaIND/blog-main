@@ -16,7 +16,7 @@ export default function Flcard({title, imgURL, desc, author, tags}) {
                     <p>{author?.name}</p>
                 </div>
                 <div className="fc-tags">
-                    {tags?.map(item => <p>{item}</p>)}
+                    {tags?.map((item, index) => <p key = {index} >{item}</p>)}
                 </div>
             </div>
         </div>

@@ -5,8 +5,7 @@ import './TgCards.css';
 
 
 export default function TgCards({title, imgURL, _id, color}) {
-    console.log(color);
-
+  
     const styles = {
         tCards:{
             backgroundColor:color

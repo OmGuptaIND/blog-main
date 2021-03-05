@@ -20,6 +20,7 @@
 .fl-cards{
     display: inline-block;
     text-align: center;
+    align-items: flex-start;
 }
 .fl-cards>p{
     display: inline-block;

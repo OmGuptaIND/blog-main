@@ -3,7 +3,6 @@ const chooseColor = ()=>{
     const index = Math.floor(Math.random()*(colorList.length));
     const color = colorList[index];
     colorList.splice(index,index);
-    console.log(colorList);
     return color;
 }
 

@@ -10,17 +10,14 @@ export default function Featured() {
         <div className="ftr" >
             <div className="ftr-title">Featured</div>
             <div className="ftr-items">
-                {Data?.map(item => {
+                {Data?.map(({_id, title, author, color}) => {
                     return (
-                        <>
-                            <Card 
-                                key = {item._id}
-                                id = {item._id}
-                                title = {item.title}
-                                author = {item.author}
-                                color = {item.color}
-                            />
-                        </>
+                        <Card 
+                            key = {_id}
+                            title = {title}
+                            author = {author}
+                            color = {color}
+                        />
                     )
                 })}
             </div>

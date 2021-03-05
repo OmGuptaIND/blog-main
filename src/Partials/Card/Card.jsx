@@ -5,7 +5,6 @@ import './Card.css';
 
 
 export default function Card({title, author, color}) {
-    console.log(color);
     const main_styles = {
         backgroundColor:color,
         boxShadow:"0px 0px 8px rgba(255, 255, 255, 0.8)"

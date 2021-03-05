@@ -35,9 +35,9 @@ export default function Footer() {
                 <div className="foot_table">
                     {Data?.map(({_id, title, links})=>{
                         return (
-                            <div className="foot_list">
+                            <div key = {_id} className="foot_list">
                                 <p className="foot_tag">{title}</p>
-                                {links?.map(item=>(<p className="foot_options">{item}</p>))}
+                                {links?.map((item, index)=>(<p key={index} className="foot_options">{item}</p>))}
                             </div>
                         )
                     })}
